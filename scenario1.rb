@@ -5,6 +5,7 @@ require 'Selenium-webdriver'
 
 @driver = Selenium::WebDriver.for :chrome
 @driver.navigate.to "https://codepen.io/CalendlyQA/full/KKPQLmV"
+@driver.manage.window.maximize
 
 #Set size of board
 @tablesize = 3

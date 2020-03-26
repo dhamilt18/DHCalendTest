@@ -2,8 +2,10 @@ require 'rubygems'
 require 'Selenium-webdriver'
 
 #This is 'Happy Path' scenario is for when there is an "O" 'Winner' with large table size in a diagonal
+
 @driver = Selenium::WebDriver.for :chrome
 @driver.navigate().to  "https://codepen.io/CalendlyQA/full/KKPQLmV"
+@driver.manage.window.maximize
 
 #Set size of board
 @tablesize = 5
